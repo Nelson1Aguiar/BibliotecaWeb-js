@@ -286,7 +286,12 @@ deleteLivroButton.addEventListener("click", function () {
                         vazio.textContent="Nenhum livro cadastrado";
                         vazio.style.alignSelf="center";
                         vazio.style.justifySelf="center";
-                        vazio.style.marginLeft = "35%";
+                        if(larguraTela <= 768){
+                            vazio.style.marginLeft = "0%";
+                        }
+                        else{
+                            vazio.style.marginLeft = "35%";
+                        }
                         vazio.style.fontSize="20px";
                         vazio.style.color="white";
                         deleteLivro.appendChild(vazio);
